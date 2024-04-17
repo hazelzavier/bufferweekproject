@@ -2,17 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../css/style.css" rel="stylesheet">
-    <script src="../javascript/opacity.js"></script>
-    <!-- <script src="../javascript/rotation.js"></script> -->
-    <title>Home</title>
+    <title>Gebruikersonvriendelijke Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="donkey">
-        <img src="../images/donkey.jpg">
-    </div>
+<header>
+    <h1>W3lc0m3 2 0ur 53cr3t W3b51t3</h1>
+</header>
 
+<main>
+    <section id="content">
+        <h2 style="color: pink;">0ur M0v13 5t@r Pr0duct5</h2>
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h3 style="font-family: Impact, sans-serif;">Pr0duct 1</h3>
+            <p style="text-transform: uppercase;">c0m3 4nd g3t 1t n0w!!1!</p>
+            <button class="move-button" onmouseover="teleportButton(this)">Bui n0w</button>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h3 style="font-family: Courier, monospace;">Pr0duct 2</h3>
+            <p style="text-decoration: blink;">L1m1t3d t1m3 0ff3r!!</p>
+            <button class="move-button" onmouseover="teleportButton(this)">Bui 4 m3</button>
+        </div>
+    </section>
+</main>
+
+<footer style="background-color: purple;">
+    <p style="color: yellow;">&copy; 2024 53cr3t W3b51t3. @ll r1ght5 r3s3rv3d.</p>
+</footer>
+
+<!-- Donkey Image -->
+<div id="donkey">
+    <img src="donkey.jpg" alt="Donkey">
+</div>
+
+<!-- Audio -->
+<audio autoplay loop>
+    <source src="annoying_sound.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<!-- Cannon Button -->
+<button onclick="shootCannon()">Cannon</button>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+<script src="rotation.js"></script> <!-- Include the rotation script -->
+<script src="opacity.js"></script> <!-- Include the opacity script -->
+<script src="cannon.js"></script>
 </body>
 </html>

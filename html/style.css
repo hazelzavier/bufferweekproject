@@ -1,0 +1,138 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('path/to/your/donkey.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 45%;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px; /* Added to limit the height of the images */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Button styles */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.move-button {
+    position: relative;
+}
+
+/* Cannonball animation */
+.cannonball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    animation: shootUp 1s ease-out forwards;
+}
+
+@keyframes shootUp {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 50%;
+    }
+    100% {
+        bottom: 100%;
+    }
+}
+
+.shoot-cannonball {
+    animation: shootDown 1s ease-in forwards;
+}
+
+@keyframes shootDown {
+    0% {
+        bottom: 100%;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+/* Brightness form */
+#brightness-form {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#brightness-form label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#brightness-level {
+    width: 200px;
+}
+
+/* Rotate donkey image */
+#donkey img {
+    animation: rotate 10s linear infinite;
+    width: 200px; /* Adjust width as needed */
+    height: auto;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
